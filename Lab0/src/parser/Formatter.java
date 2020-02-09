@@ -1,5 +1,5 @@
 package parser;
 
-public interface Formatter {
+interface Formatter {
     String format(WordStatistic statistic);
 }

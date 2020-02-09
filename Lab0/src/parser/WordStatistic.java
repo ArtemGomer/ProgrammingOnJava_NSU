@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class WordStatistic {
+class WordStatistic {
     private int numberOfWords;
     private TreeMap<String, Integer> statistic = new TreeMap<>();
     private ArrayList<Map.Entry<String, Integer>> sortedStatistic = new ArrayList<>();

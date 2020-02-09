@@ -2,7 +2,7 @@ package parser;
 
 import java.util.Map;
 
-public class CSVFormatter implements Formatter {
+class CSVFormatter implements Formatter {
     @Override
     public String format(WordStatistic statistic) {
         StringBuilder outputString = new StringBuilder();

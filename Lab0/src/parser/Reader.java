@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Files;
 
-public class Reader {
+class Reader {
     private final Path inputPath;
 
     public Reader(Path input) {
