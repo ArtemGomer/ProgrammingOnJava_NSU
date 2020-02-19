@@ -8,7 +8,7 @@ public class Print extends Validator implements Operation {
     @Override
     public void doOperation(Context context, String[] args) {
         if (this.isValid(context, args)){
-            System.out.println("Your printed number = " + context.getNumbers().peek());
+            System.out.println(context.getNumbers().peek());
         }
     }
 

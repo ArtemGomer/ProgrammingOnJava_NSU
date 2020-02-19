@@ -12,14 +12,14 @@ public class DivisionTest {
         context.getNumbers().push(5d);
         Division division = new Division();
         division.doOperation(context, new String[0]);
-        assertEquals(context.getNumbers().peek(), new Double(5));
+        assertEquals(context.getNumbers().peek(), 5d, 1e-10);
         context.getNumbers().push(6d);
         division.doOperation(context, new String[0]);
-        assertEquals(context.getNumbers().peek(), new Double(6/5d));
+        assertEquals(context.getNumbers().peek(), 6/5d, 1e-10);
         context.getNumbers().push(0d);
         context.getNumbers().push(5d);
         division.doOperation(context, new String[0]);
-        assertEquals(context.getNumbers().pop(), new Double(5));
-        assertEquals(context.getNumbers().pop(), new Double(0));
+        assertEquals(context.getNumbers().pop(), 5d, 1e-10);
+        assertEquals(context.getNumbers().pop(), 0d, 1e-10);
     }
 }

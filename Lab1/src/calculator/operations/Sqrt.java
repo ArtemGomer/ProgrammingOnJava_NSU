@@ -1,5 +1,6 @@
 package calculator.operations;
 
+import java.util.Arrays;
 import java.util.Stack;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,6 +19,10 @@ public class Sqrt extends Validator implements Operation {
     @Override
     boolean isValid(Context context, String[] args){
         Stack<Double> numbers = context.getNumbers();
+        if (args.length != 0){
+            logger.log(Level.WARNING,"Wrong arguments for {0} command : {1}", new Object[]{this.getClass().getName(), Arrays.toString(args)});
+            return false;
+        }
         if (numbers.size() < 1){
             logger.log(Level.WARNING,"Too few elements on stack for {0} command", this.getClass().getName());
             return false;
