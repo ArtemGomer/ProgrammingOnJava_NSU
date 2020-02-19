@@ -10,9 +10,9 @@ public class PrintTest {
     public void doOperation() {
         Context context = new Context();
         Print print = new Print();
-        context.getNumbers().push(5d);
+        context.pushValue(5d);
         print.doOperation(context, new String[0]);
-        assertEquals(context.getNumbers().peek(), 5d, 1e-10);
+        assertEquals(5d, context.getValue(), 1e-10);
     }
 
     @Test
@@ -20,7 +20,7 @@ public class PrintTest {
         Context context = new Context();
         Print print = new Print();
         assertFalse(print.isValid(context, new String[0]));
-        context.getNumbers().push(6d);
+        context.pushValue(6d);
         assertFalse(print.isValid(context, new String[]{"a"}));
         assertTrue(print.isValid(context, new String[0]));
     }

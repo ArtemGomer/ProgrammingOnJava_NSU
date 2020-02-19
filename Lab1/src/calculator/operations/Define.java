@@ -1,7 +1,5 @@
 package calculator.operations;
 
-
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,12 +17,7 @@ public class Define implements Operation {
                 logger.log(Level.WARNING,"Can not define {0} as {1}", new Object[]{args[0], args[1]});
                 return;
             }
-            Map<String, Double> variables = context.getVariables();
-            if (variables.containsKey(args[0])) {
-                variables.replace(args[0], value);
-            } else {
-                variables.put(args[0], value);
-            }
+            context.setVariable(args[0], value);
             logger.log(Level.FINE,"Successfully defined {0} as {1}", new Object[]{args[0], args[1]});
             return;
         }

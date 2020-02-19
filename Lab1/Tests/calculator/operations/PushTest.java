@@ -10,12 +10,12 @@ public class PushTest {
     public void doOperation() {
         Context context = new Context();
         Push push = new Push();
-        context.getVariables().put("a", 3.14);
+        context.setVariable("a", 3.14);
         push.doOperation(context, new String[]{"ab"});
-        assertTrue(context.getNumbers().isEmpty());
+        assertEquals(0, context.getStackSize());
         push.doOperation(context, new String[]{"a"});
-        assertEquals(context.getNumbers().peek(), 3.14, 1e-10);
+        assertEquals(3.14, context.getValue(), 1e-10);
         push.doOperation(context, new String[]{"123"});
-        assertEquals(context.getNumbers().peek(), 123d, 1e-10);
+        assertEquals(123d, context.getValue(), 1e-10);
     }
 }

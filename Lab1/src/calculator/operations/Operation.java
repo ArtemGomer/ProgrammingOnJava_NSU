@@ -1,5 +1,5 @@
 package calculator.operations;
 
 public interface Operation {
-    public void doOperation(Context context, String[] args);
+    void doOperation(Context context, String[] args);
 }

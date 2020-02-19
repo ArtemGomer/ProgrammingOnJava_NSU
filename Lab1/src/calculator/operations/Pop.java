@@ -9,7 +9,7 @@ public class Pop extends Validator implements Operation {
     @Override
     public void doOperation(Context context, String[] args) {
         if (this.isValid(context, args)) {
-            context.getNumbers().pop();
+            context.popValue();
             logger.log(Level.FINE,"Successfully did operation {0}", this.getClass().getName());
         }
     }
@@ -20,7 +20,7 @@ public class Pop extends Validator implements Operation {
             logger.log(Level.WARNING,"Wrong arguments for {0} command", this.getClass().getName());
             return false;
         }
-        if (context.getNumbers().size() == 0){
+        if (context.getStackSize() == 0){
             logger.log(Level.WARNING,"Too few elements on stack for {0} command", this.getClass().getName());
             return false;
         }

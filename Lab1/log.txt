@@ -1,52 +1,52 @@
-февр. 19, 2020 9:59:12 AM Main main
+февр. 19, 2020 11:12:19 PM Main main
 FINE: Create calculator
-февр. 19, 2020 9:59:12 AM calculator.Calculator calculate
+февр. 19, 2020 11:12:19 PM calculator.Calculator calculate
 FINE: Enter calculator.calculate(in.txt)
-февр. 19, 2020 9:59:12 AM calculator.Calculator calculate
+февр. 19, 2020 11:12:19 PM calculator.Calculator calculate
 FINE: Create reader from in.txt.
-февр. 19, 2020 9:59:12 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Trying to create class for command DEFINE
-февр. 19, 2020 9:59:12 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Created operation calculator.operations.Define
-февр. 19, 2020 9:59:12 AM calculator.Calculator calculate
+февр. 19, 2020 11:12:19 PM calculator.Calculator calculate
 FINE: Enter doOperation from calculator.operations.Define
-февр. 19, 2020 9:59:12 AM calculator.operations.Define doOperation
+февр. 19, 2020 11:12:19 PM calculator.operations.Define doOperation
 FINE: Successfully defined a as 16
-февр. 19, 2020 9:59:12 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Trying to create class for command PUSH
-февр. 19, 2020 9:59:12 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Created operation calculator.operations.Push
-февр. 19, 2020 9:59:12 AM calculator.Calculator calculate
+февр. 19, 2020 11:12:19 PM calculator.Calculator calculate
 FINE: Enter doOperation from calculator.operations.Push
-февр. 19, 2020 9:59:12 AM calculator.operations.Push doOperation
+февр. 19, 2020 11:12:19 PM calculator.operations.Push doOperation
 FINE: Successfully did operation calculator.operations.Push
-февр. 19, 2020 9:59:12 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Trying to create class for command PUSH
-февр. 19, 2020 9:59:12 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Created operation calculator.operations.Push
-февр. 19, 2020 9:59:13 AM calculator.Calculator calculate
+февр. 19, 2020 11:12:19 PM calculator.Calculator calculate
 FINE: Enter doOperation from calculator.operations.Push
-февр. 19, 2020 9:59:13 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Trying to create class for command +
-февр. 19, 2020 9:59:13 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Created operation calculator.operations.Addition
-февр. 19, 2020 9:59:13 AM calculator.Calculator calculate
+февр. 19, 2020 11:12:19 PM calculator.Calculator calculate
 FINE: Enter doOperation from calculator.operations.Addition
-февр. 19, 2020 9:59:13 AM calculator.operations.Addition doOperation
+февр. 19, 2020 11:12:19 PM calculator.operations.Addition doOperation
 FINE: Successfully did operation calculator.operations.Addition
-февр. 19, 2020 9:59:13 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Trying to create class for command SQRT
-февр. 19, 2020 9:59:13 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Created operation calculator.operations.Sqrt
-февр. 19, 2020 9:59:13 AM calculator.Calculator calculate
+февр. 19, 2020 11:12:19 PM calculator.Calculator calculate
 FINE: Enter doOperation from calculator.operations.Sqrt
-февр. 19, 2020 9:59:13 AM calculator.operations.Sqrt doOperation
+февр. 19, 2020 11:12:19 PM calculator.operations.Sqrt doOperation
 FINE: Successfully did operation calculator.operations.Sqrt
-февр. 19, 2020 9:59:13 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Trying to create class for command PRINT
-февр. 19, 2020 9:59:13 AM calculator.OperationFactory createOperation
+февр. 19, 2020 11:12:19 PM calculator.OperationFactory createOperation
 FINE: Created operation calculator.operations.Print
-февр. 19, 2020 9:59:13 AM calculator.Calculator calculate
+февр. 19, 2020 11:12:19 PM calculator.Calculator calculate
 FINE: Enter doOperation from calculator.operations.Print
-февр. 19, 2020 9:59:13 AM Main main
+февр. 19, 2020 11:12:19 PM Main main
 INFO: Successfully ended calculation!

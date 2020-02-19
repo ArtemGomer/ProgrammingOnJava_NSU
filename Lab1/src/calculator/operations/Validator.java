@@ -11,7 +11,7 @@ public abstract class Validator {
             return false;
         }
 
-        if (context.getNumbers().size() < 2){
+        if (context.getStackSize() < 2){
             logger.log(Level.WARNING,"Too few elements on stack for {0} command", this.getClass().getName());
             return false;
         }
