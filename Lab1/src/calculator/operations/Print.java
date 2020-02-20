@@ -3,7 +3,7 @@ package calculator.operations;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Print extends Validator implements Operation {
+public final class Print extends Operation {
     private final static Logger logger = Logger.getLogger(Addition.class.getName());
     @Override
     public void doOperation(Context context, String[] args) {
@@ -13,7 +13,7 @@ public class Print extends Validator implements Operation {
     }
 
     @Override
-     boolean isValid(Context context, String[] args){
+     protected boolean isValid(Context context, String[] args){
         if (args.length != 0){
             logger.log(Level.WARNING,"Wrong arguments for {0} command", this.getClass().getName());
             return false;

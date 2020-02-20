@@ -30,7 +30,7 @@ public class Calculator {
                     String operationName = tokens[0];
                     String[] arguments = new String[tokens.length - 1];
                     System.arraycopy(tokens, 1, arguments, 0, tokens.length - 1);
-                    Operation operation = OperationFactory.Instance.createOperation(operationName);
+                    Operation operation = OperationFactory.getInstance().createOperation(operationName);
                     if (operation != null) {
                         logger.log(Level.FINE, "Enter doOperation from {0}", operation.getClass().getName());
                         operation.doOperation(context, arguments);
@@ -44,5 +44,4 @@ public class Calculator {
             }
         }
     }
-
 }

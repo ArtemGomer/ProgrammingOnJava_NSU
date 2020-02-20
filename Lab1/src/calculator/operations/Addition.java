@@ -3,7 +3,7 @@ package calculator.operations;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Addition extends Validator implements Operation {
+public final class Addition extends Operation {
     private final static Logger logger = Logger.getLogger(Addition.class.getName());
     @Override
     public void doOperation(Context context, String[] args) {

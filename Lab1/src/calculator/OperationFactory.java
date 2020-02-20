@@ -9,6 +9,7 @@ import java.util.logging.Logger;
 
 public class OperationFactory {
     private final static Logger logger = Logger.getLogger(OperationFactory.class.getName());
+
     private OperationFactory() {
         try {
             properties.load(Calculator.class.getResourceAsStream("config.properties"));
@@ -18,7 +19,14 @@ public class OperationFactory {
         }
     }
 
-    public static final OperationFactory Instance = new OperationFactory();
+    private static OperationFactory Instance;
+    public static OperationFactory getInstance(){
+        if (Instance == null){
+            Instance = new OperationFactory();
+        }
+        return Instance;
+    }
+
     private final Properties properties = new Properties();
 
     public Operation createOperation(String operationName) {
