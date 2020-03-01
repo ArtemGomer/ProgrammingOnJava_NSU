@@ -1,0 +1,44 @@
+мар. 01, 2020 2:59:55 PM Main main
+FINE: Create calculator
+мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
+FINE: Enter calculator.calculate(in.txt)
+мар. 01, 2020 2:59:55 PM calculator.Calculator createScanner
+FINE: Create reader from in.txt.
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Trying to create class for command DEFINE
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Created operation calculator.operations.Define
+мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
+FINE: Enter doOperation from calculator.operations.Define
+мар. 01, 2020 2:59:55 PM calculator.operations.Define doOperation
+FINE: Successfully defined a as 4
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Trying to create class for command PUSH
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Created operation calculator.operations.Push
+мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
+FINE: Enter doOperation from calculator.operations.Push
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Trying to create class for command +
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Created operation calculator.operations.Addition
+мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
+FINE: Enter doOperation from calculator.operations.Addition
+мар. 01, 2020 2:59:55 PM calculator.operations.Operation isValid
+WARNING: Too few elements on stack for calculator.operations.Addition command
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Trying to create class for command SQRT
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Created operation calculator.operations.Sqrt
+мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
+FINE: Enter doOperation from calculator.operations.Sqrt
+мар. 01, 2020 2:59:55 PM calculator.operations.Sqrt doOperation
+FINE: Successfully did operation calculator.operations.Sqrt
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Trying to create class for command PRINT
+мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+FINE: Created operation calculator.operations.Print
+мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
+FINE: Enter doOperation from calculator.operations.Print
+мар. 01, 2020 2:59:55 PM Main main
+INFO: Successfully ended calculation!

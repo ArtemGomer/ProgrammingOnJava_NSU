@@ -13,14 +13,7 @@ public class Calculator {
 
     public void calculate(String inFileName) throws IOException {
         logger.log(Level.FINE,"Enter calculator.calculate({0})", inFileName);
-        Scanner reader;
-        if (inFileName == null) {
-            reader = new Scanner(System.in);
-            logger.log(Level.FINE,"Create reader from System.in");
-        } else {
-            reader = new Scanner(Paths.get(inFileName).toAbsolutePath());
-            logger.log(Level.FINE,"Create reader from {0}.", inFileName);
-        }
+        Scanner reader = this.createScanner(inFileName);
         Context context = new Context();
         while (reader.hasNext()) {
             String line = reader.nextLine();
@@ -42,6 +35,16 @@ public class Calculator {
                 logger.log(Level.FINE,"Reached \"END\" command.");
                 return;
             }
+        }
+    }
+
+    private Scanner createScanner(String inFileName) throws IOException {
+        if (inFileName == null) {
+            logger.log(Level.FINE,"Create reader from System.in");
+            return new Scanner(System.in);
+        } else {
+            logger.log(Level.FINE,"Create reader from {0}.", inFileName);
+            return new Scanner(Paths.get(inFileName).toAbsolutePath());
         }
     }
 }

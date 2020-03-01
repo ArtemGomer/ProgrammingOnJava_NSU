@@ -29,6 +29,7 @@ public class Main {
             calculator.calculate(inFileName);
         } catch (IOException ex) {
             logger.log(Level.SEVERE,"Can not open file.", ex);
+            return;
         }
         logger.log(Level.INFO, "Successfully ended calculation!");
     }
