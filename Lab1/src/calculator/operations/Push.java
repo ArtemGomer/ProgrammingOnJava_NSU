@@ -1,12 +1,14 @@
 package calculator.operations;
 
+import calculator.calculatorExceptions.WrongArgumentsException;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Push extends Operation {
     private final static Logger logger = Logger.getLogger(Addition.class.getName());
     @Override
-    public void doOperation(Context context, String[] args) {
+    public void doOperation(Context context, String[] args) throws WrongArgumentsException {
         double value;
         try {
             value = Double.parseDouble(args[0]);
@@ -14,7 +16,7 @@ public class Push extends Operation {
             if (context.isDefined(args[0])) {
                 context.pushValue(context.getVariableValue(args[0]));
             } else {
-                logger.log(Level.WARNING, "Can not push {0} on stack", args[0]);
+                throw new WrongArgumentsException("Variable " + args[0] + " is not defined");
             }
             return;
         }

@@ -1,5 +1,9 @@
 package calculator.operations;
 
+import calculator.calculatorExceptions.CalculatorException;
+import calculator.calculatorExceptions.StackSizeException;
+import calculator.calculatorExceptions.WrongArgumentsException;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -7,24 +11,19 @@ public final class Pop extends Operation {
     private final static Logger logger = Logger.getLogger(Addition.class.getName());
 
     @Override
-    public void doOperation(Context context, String[] args) {
-        if (this.isValid(context, args)) {
-            context.popValue();
-            logger.log(Level.FINE,"Successfully did operation {0}", this.getClass().getName());
-        }
+    public void doOperation(Context context, String[] args) throws CalculatorException {
+        this.isValid(context, args);
+        context.popValue();
+        logger.log(Level.FINE, "Successfully did operation {0}", this.getClass().getName());
     }
 
     @Override
-    protected boolean isValid(Context context, String[] args){
-        if (args.length != 0){
-            logger.log(Level.WARNING,"Wrong arguments for {0} command", this.getClass().getName());
-            return false;
+    protected void isValid(Context context, String[] args) throws CalculatorException {
+        if (args.length != 0) {
+            throw new WrongArgumentsException("Too many arguments for " + this.getClass().getName() + " command.(0 needed)");
         }
-        if (context.getStackSize() == 0){
-            logger.log(Level.WARNING,"Too few elements on stack for {0} command", this.getClass().getName());
-            return false;
+        if (context.getStackSize() == 0) {
+            throw new StackSizeException("Too few elements on stack.( >= 1 needed)");
         }
-        return true;
     }
-
 }

@@ -1,5 +1,6 @@
 package calculator.operations;
 
+import calculator.calculatorExceptions.WrongArgumentsException;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -7,7 +8,7 @@ import static org.junit.Assert.*;
 public class PushTest {
 
     @Test
-    public void doOperation() {
+    public void doOperation() throws WrongArgumentsException {
         Context context = new Context();
         Push push = new Push();
         context.setVariable("a", 3.14);

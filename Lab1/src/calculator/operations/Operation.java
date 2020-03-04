@@ -1,23 +1,21 @@
 package calculator.operations;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import calculator.calculatorExceptions.*;
 
 public abstract class Operation {
-    private static final Logger logger = Logger.getLogger(Addition.class.getName());
 
-    public abstract void  doOperation(Context context, String[] args);
 
-    protected boolean isValid(Context context, String[] args){
+    public abstract void  doOperation(Context context, String[] args) throws CalculatorException;
+
+    protected void isValid(Context context, String[] args) throws CalculatorException {
         if (args.length != 0){
-            logger.log(Level.WARNING,"Wrong arguments for {0} command", this.getClass().getName());
-            return false;
+            throw new WrongArgumentsException("Too many arguments");
+//            logger.log(Level.WARNING,"Wrong arguments for {0} command", this.getClass().getName());
         }
 
         if (context.getStackSize() < 2){
-            logger.log(Level.WARNING,"Too few elements on stack for {0} command", this.getClass().getName());
-            return false;
+//            logger.log(Level.WARNING,"Too few elements on stack for {0} command", this.getClass().getName());
+            throw new StackSizeException("Too few elements on stack.( >= 2 needed)");
         }
-        return true;
     }
 }

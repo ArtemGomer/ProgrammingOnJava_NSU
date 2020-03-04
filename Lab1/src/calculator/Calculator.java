@@ -1,6 +1,7 @@
 package calculator;
 
 import calculator.operations.*;
+import calculator.calculatorExceptions.*;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -23,12 +24,19 @@ public class Calculator {
                     String operationName = tokens[0];
                     String[] arguments = new String[tokens.length - 1];
                     System.arraycopy(tokens, 1, arguments, 0, tokens.length - 1);
-                    Operation operation = OperationFactory.getInstance().createOperation(operationName);
-                    if (operation != null) {
-                        logger.log(Level.FINE, "Enter doOperation from {0}", operation.getClass().getName());
+                    Operation operation;
+                    logger.log(Level.FINE,"Trying to create class for command {0}", operationName);
+                    try {
+                        operation = OperationFactory.getInstance().createOperation(operationName);
+                    } catch (Exception ex) {
+                        logger.log(Level.WARNING, "Can not create class for command", ex);
+                        continue;
+                    }
+                    logger.log(Level.FINE, "Enter doOperation of {0}", operation.getClass().getName());
+                    try {
                         operation.doOperation(context, arguments);
-                    } else {
-                        logger.log(Level.WARNING,"Unknown command {0}.", operationName);
+                    } catch (CalculatorException ex){
+                        logger.log(Level.WARNING,"Operation exception", ex);
                     }
                 }
             } else {

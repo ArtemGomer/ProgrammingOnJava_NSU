@@ -1,44 +1,40 @@
-мар. 01, 2020 2:59:55 PM Main main
+мар. 04, 2020 4:23:53 PM Main main
 FINE: Create calculator
-мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
+мар. 04, 2020 4:23:53 PM calculator.Calculator calculate
 FINE: Enter calculator.calculate(in.txt)
-мар. 01, 2020 2:59:55 PM calculator.Calculator createScanner
+мар. 04, 2020 4:23:53 PM calculator.Calculator createScanner
 FINE: Create reader from in.txt.
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+мар. 04, 2020 4:23:53 PM calculator.Calculator calculate
 FINE: Trying to create class for command DEFINE
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
-FINE: Created operation calculator.operations.Define
-мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
-FINE: Enter doOperation from calculator.operations.Define
-мар. 01, 2020 2:59:55 PM calculator.operations.Define doOperation
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
+FINE: Enter doOperation of calculator.operations.Define
+мар. 04, 2020 4:23:54 PM calculator.operations.Define doOperation
 FINE: Successfully defined a as 4
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
 FINE: Trying to create class for command PUSH
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
-FINE: Created operation calculator.operations.Push
-мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
-FINE: Enter doOperation from calculator.operations.Push
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
+FINE: Enter doOperation of calculator.operations.Push
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
 FINE: Trying to create class for command +
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
-FINE: Created operation calculator.operations.Addition
-мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
-FINE: Enter doOperation from calculator.operations.Addition
-мар. 01, 2020 2:59:55 PM calculator.operations.Operation isValid
-WARNING: Too few elements on stack for calculator.operations.Addition command
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
+FINE: Enter doOperation of calculator.operations.Addition
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
+WARNING: Operation exception
+calculator.calculatorExceptions.StackSizeException: Too few elements on stack.( >= 2 needed)
+	at calculator.operations.Operation.isValid(Operation.java:18)
+	at calculator.operations.Addition.doOperation(Addition.java:13)
+	at calculator.Calculator.calculate(Calculator.java:37)
+	at Main.main(Main.java:29)
+
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
 FINE: Trying to create class for command SQRT
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
-FINE: Created operation calculator.operations.Sqrt
-мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
-FINE: Enter doOperation from calculator.operations.Sqrt
-мар. 01, 2020 2:59:55 PM calculator.operations.Sqrt doOperation
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
+FINE: Enter doOperation of calculator.operations.Sqrt
+мар. 04, 2020 4:23:54 PM calculator.operations.Sqrt doOperation
 FINE: Successfully did operation calculator.operations.Sqrt
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
 FINE: Trying to create class for command PRINT
-мар. 01, 2020 2:59:55 PM calculator.OperationFactory createOperation
-FINE: Created operation calculator.operations.Print
-мар. 01, 2020 2:59:55 PM calculator.Calculator calculate
-FINE: Enter doOperation from calculator.operations.Print
-мар. 01, 2020 2:59:55 PM Main main
+мар. 04, 2020 4:23:54 PM calculator.Calculator calculate
+FINE: Enter doOperation of calculator.operations.Print
+мар. 04, 2020 4:23:54 PM Main main
 INFO: Successfully ended calculation!

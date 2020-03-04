@@ -19,28 +19,22 @@ public class OperationFactory {
         }
     }
 
-    private static OperationFactory Instance;
+    private static volatile OperationFactory Instance;
     public static OperationFactory getInstance(){
         if (Instance == null){
-            Instance = new OperationFactory();
+            synchronized (ClassLoader.class){
+                if (Instance == null){
+                    Instance = new OperationFactory();
+                }
+            }
         }
         return Instance;
     }
 
     private final Properties properties = new Properties();
 
-    public Operation createOperation(String operationName) {
+    public Operation createOperation(String operationName) throws Exception{
         String className = properties.getProperty(operationName);
-        logger.log(Level.FINE,"Trying to create class for command {0}", operationName);
-        Operation operation = null;
-        try {
-            operation = (Operation) Class.forName(className).getDeclaredConstructor().newInstance();
-        } catch (Exception ex) {
-            logger.log(Level.WARNING,"Can not create class.");
-        }
-        if (operation != null) {
-            logger.log(Level.FINE, "Created operation {0}", className);
-        }
-        return operation;
+        return (Operation) Class.forName(className).getDeclaredConstructor().newInstance();
     }
 }
