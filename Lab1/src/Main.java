@@ -14,7 +14,7 @@ public class Main {
         try {
             logManager.readConfiguration(new FileInputStream("logConfig.properties"));
         } catch (IOException ex){
-            logger.log(Level.WARNING, "Can not read properties for logging");
+            logger.log(Level.WARNING, "Can not read properties for logging", ex);
         }
         String inFileName = null;
         if (args.length > 1) {

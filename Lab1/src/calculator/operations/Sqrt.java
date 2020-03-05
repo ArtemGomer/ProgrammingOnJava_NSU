@@ -1,9 +1,6 @@
 package calculator.operations;
 
-import calculator.calculatorExceptions.CalculatorException;
-import calculator.calculatorExceptions.NegativeNumberException;
-import calculator.calculatorExceptions.StackSizeException;
-import calculator.calculatorExceptions.WrongArgumentsException;
+import calculator.calculatorExceptions.*;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

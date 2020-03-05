@@ -1,7 +1,6 @@
 package calculator.operations;
 
-import calculator.calculatorExceptions.CalculatorException;
-import calculator.calculatorExceptions.DivisionByZeroException;
+import calculator.calculatorExceptions.*;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -14,13 +14,14 @@ public class Push extends Operation {
             value = Double.parseDouble(args[0]);
         } catch (NumberFormatException ex) {
             if (context.isDefined(args[0])) {
+                logger.log(Level.FINE,"Successfully did operation {0}", this.getClass().getName());
                 context.pushValue(context.getVariableValue(args[0]));
             } else {
                 throw new WrongArgumentsException("Variable " + args[0] + " is not defined");
             }
             return;
         }
-        context.pushValue(value);
         logger.log(Level.FINE,"Successfully did operation {0}", this.getClass().getName());
+        context.pushValue(value);
     }
 }

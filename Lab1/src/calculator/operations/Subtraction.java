@@ -1,6 +1,6 @@
 package calculator.operations;
 
-import calculator.calculatorExceptions.CalculatorException;
+import calculator.calculatorExceptions.*;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,6 +13,5 @@ public final class Subtraction extends Operation {
         this.isValid(context, args);
         context.pushValue(context.popValue() - context.popValue());
         logger.log(Level.FINE, "Successfully did operation {0}", this.getClass().getName());
-
     }
 }

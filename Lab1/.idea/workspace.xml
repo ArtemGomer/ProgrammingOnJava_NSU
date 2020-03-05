@@ -1,42 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="465864c8-b548-4209-a89e-8c662d506105" name="Default Changelist" comment="" />
+    <list default="true" id="a06f7675-3757-41ca-ad94-18170cb717a9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/../GradleLab1">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$/../GradleLab1">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="JUnit4 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1XsWvDkOROJfqy2YA02zc5vlakC" />
+  <component name="ProjectId" id="1Ygq6aXR0g4w2HPwzG4DP0mRtfk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -44,48 +15,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="OverrideImplement.combined" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="jdk.selected.JAVA_MODULE" value="13" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="calculator.operations" />
-      <recent name="calculator" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src\main\resources" />
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src\main\java" />
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src\main\java\calculator\operations" />
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src\main\java\calculator" />
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src\test\java" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="calculator" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src\main\resources" />
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src" />
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src\main\java\calculator" />
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\GradleLab1\src\main\java" />
-      <recent name="C:\Users\Gomer\Desktop\Programs\IdeaProjects\Lab1" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="JUnit.RunTests">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Lab1" />
       <option name="PROGRAM_PARAMETERS" value="in.txt" />
@@ -93,72 +29,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainGradle" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="13" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="GradleLab1.main" />
-      <option name="PROGRAM_PARAMETERS" value="in.txt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../GradleLab1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="PROGRAM_PARAMETERS" value="in.txt" />
-      <option name="VM_PARAMETERS" value="-Djava.util.logging.config.file=logConfig.properties" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GradleLab1 [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../GradleLab1" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="javadoc" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiplicationTest.doOperation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calculator.*" />
+          <option name="PATTERN" value="calculator.operations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="calculator" />
-      <option name="MAIN_CLASS_NAME" value="calculator.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="calculator.operations" />
+      <option name="MAIN_CLASS_NAME" value="calculator.operations.MultiplicationTest" />
+      <option name="METHOD_NAME" value="doOperation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest" type="JUnit" factoryName="JUnit">
+    <configuration name="PushTest.doOperation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="13" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.operations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="calculator.operations" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="directory" />
-      <option name="PARAMETERS" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <dir value="$PROJECT_DIR$/Tests" />
+      <option name="MAIN_CLASS_NAME" value="calculator.operations.PushTest" />
+      <option name="METHOD_NAME" value="doOperation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,20 +70,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SqrtTest.doOperation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.operations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="calculator.operations" />
+      <option name="MAIN_CLASS_NAME" value="calculator.operations.SqrtTest" />
+      <option name="METHOD_NAME" value="doOperation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubtractionTest.doOperation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.operations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="calculator.operations" />
+      <option name="MAIN_CLASS_NAME" value="calculator.operations.SubtractionTest" />
+      <option name="METHOD_NAME" value="doOperation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.MainGradle" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.GradleLab1 [javadoc]" />
-      <item itemvalue="JUnit.MainTest" />
-      <item itemvalue="JUnit.CalculatorTest" />
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JUnit.MultiplicationTest.doOperation" />
+      <item itemvalue="JUnit.PushTest.doOperation" />
       <item itemvalue="JUnit.RunTests" />
+      <item itemvalue="JUnit.SqrtTest.doOperation" />
+      <item itemvalue="JUnit.SubtractionTest.doOperation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RunTests" />
-        <item itemvalue="Gradle.GradleLab1 [javadoc]" />
-        <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.SubtractionTest.doOperation" />
+        <item itemvalue="JUnit.SqrtTest.doOperation" />
+        <item itemvalue="JUnit.PushTest.doOperation" />
+        <item itemvalue="JUnit.MultiplicationTest.doOperation" />
       </list>
     </recent_temporary>
   </component>
@@ -194,94 +125,69 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="465864c8-b548-4209-a89e-8c662d506105" name="Default Changelist" comment="" />
-      <created>1581835510035</created>
+      <changelist id="a06f7675-3757-41ca-ad94-18170cb717a9" name="Default Changelist" comment="" />
+      <created>1583374410530</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1581835510035</updated>
+      <updated>1583374410530</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="674" y="155" width="587" height="729" key="#MainGradle" timestamp="1582446166181">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583375549915">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="674" y="155" width="587" height="729" key="#MainGradle/0.0.1920.1040@0.0.1920.1040" timestamp="1582446166181" />
-    <state x="552" y="179" key="#Project_Structure" timestamp="1583313679895">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583375549915" />
+    <state x="421" y="83" key="FileChooserDialogImpl" timestamp="1583374464289">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1583313679895" />
-    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582022381822">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583374464289" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1583378827917">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582022381822" />
-    <state x="414" y="176" width="1092" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583049363570">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583378827917" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1583378827916">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="414" y="176" width="1092" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583049363570" />
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1582040288868">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583378827916" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1583378827915">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582040288868" />
-    <state x="719" y="311" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582079319285">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583378827915" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1583378827917">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="719" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582079319285" />
-    <state x="767" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1583308568851">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583378827917" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1583378827919">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="767" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583308568851" />
-    <state x="690" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1582121536030">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583378827919" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1583378827918">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="690" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582121536030" />
-    <state x="740" y="284" key="FileChooserDialogImpl" timestamp="1583313575752">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583378827918" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1583378827917">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="740" y="284" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583313575752" />
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1583315875077">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583378827917" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1583378827918">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583315875077" />
-    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1583315875077">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583378827918" />
+    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583374476289">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583315875077" />
-    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1583315875077">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583315875077" />
-    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1583315875077">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583315875077" />
-    <state x="744" y="84" key="SettingsEditor" timestamp="1582448283383">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="744" y="84" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582448283383" />
-    <state x="636" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1583305324769">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="636" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583305324769" />
-    <state x="1095" y="412" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582036957700">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1095" y="412" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1582036957700" />
-    <state x="1162" y="173" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583048237929">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1162" y="173" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583048237929" />
-    <state x="652" y="140" width="758" height="852" key="find.popup" timestamp="1582129067024">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="652" y="140" width="758" height="852" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582129067024" />
-    <state x="580" y="125" key="new project wizard" timestamp="1583313565567">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="580" y="125" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1583313565567" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582037205354">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582037205354" />
+    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1583374476289" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tests/calculator/operations/PushTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

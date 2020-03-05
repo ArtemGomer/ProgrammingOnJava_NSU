@@ -1,15 +1,19 @@
 package calculator.operations;
 
-import calculator.calculatorExceptions.CalculatorException;
-import calculator.calculatorExceptions.StackSizeException;
-import calculator.calculatorExceptions.WrongArgumentsException;
+import calculator.calculatorExceptions.*;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public final class Print extends Operation {
+
+    private final static Logger logger = Logger.getLogger(Addition.class.getName());
 
     @Override
     public void doOperation(Context context, String[] args) throws CalculatorException {
         this.isValid(context, args);
         System.out.println(context.getValue());
+        logger.log(Level.FINE,"Successfully did operation {0}", this.getClass().getName());
     }
 
     @Override

@@ -8,11 +8,13 @@ import static org.junit.Assert.*;
 public class PrintTest {
 
     @Test
-    public void doOperation() throws CalculatorException {
+    public void doOperation(){
         Context context = new Context();
         Print print = new Print();
         context.pushValue(5d);
-        print.doOperation(context, new String[0]);
+        try {
+            print.doOperation(context, new String[0]);
+        } catch (CalculatorException exc){}
         assertEquals(5d, context.getValue(), 1e-10);
     }
 

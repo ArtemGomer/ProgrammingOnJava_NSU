@@ -10,17 +10,18 @@ import java.util.logging.Logger;
 public class OperationFactory {
     private final static Logger logger = Logger.getLogger(OperationFactory.class.getName());
 
-    private OperationFactory() {
+    private OperationFactory() throws IOException {
         try {
             properties.load(Calculator.class.getResourceAsStream("config.properties"));
         } catch (IOException ex) {
             logger.log(Level.SEVERE,"Can not load properties.", ex);
-            System.exit(0);
+            //System.exit(0);
+            throw ex;
         }
     }
 
     private static volatile OperationFactory Instance;
-    public static OperationFactory getInstance(){
+    public static OperationFactory getInstance() throws IOException {
         if (Instance == null){
             synchronized (ClassLoader.class){
                 if (Instance == null){

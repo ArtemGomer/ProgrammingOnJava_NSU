@@ -11,11 +11,11 @@ import java.util.logging.Logger;
 
 public class Calculator {
     private final static Logger logger = Logger.getLogger(Calculator.class.getName());
+    Context context = new Context();
 
     public void calculate(String inFileName) throws IOException {
         logger.log(Level.FINE,"Enter calculator.calculate({0})", inFileName);
         Scanner reader = this.createScanner(inFileName);
-        Context context = new Context();
         while (reader.hasNext()) {
             String line = reader.nextLine();
             if (!line.equals("END")) {
