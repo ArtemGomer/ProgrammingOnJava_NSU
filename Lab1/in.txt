@@ -1,5 +1,0 @@
-DEFINE a 4
-#lol
-PUSH a
-+
-PRINT
