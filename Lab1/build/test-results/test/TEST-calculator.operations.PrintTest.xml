@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="calculator.operations.PrintTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-08T05:16:58" hostname="CityGig" time="0.01">
+  <properties/>
+  <testcase name="doOperation" classname="calculator.operations.PrintTest" time="0.01"/>
+  <system-out><![CDATA[5.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

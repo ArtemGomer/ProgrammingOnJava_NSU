@@ -1,0 +1,39 @@
+???. 08, 2020 12:14:14 PM Main main
+FINE: Create calculator
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+FINE: Enter calculator.calculate(in.txt)
+???. 08, 2020 12:14:14 PM calculator.Calculator createScanner
+FINE: Create reader from in.txt.
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+FINE: Trying to create class for command DEFINE
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+FINE: Successfully created class calculator.operations.Define
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+FINE: Enter doOperation of calculator.operations.Define
+???. 08, 2020 12:14:14 PM calculator.operations.Define doOperation
+FINE: Successfully defined a as 4
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+FINE: Trying to create class for command KEK
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+WARNING: Unknown command
+calculator.factoryExceptions.UnknownCommandException: Unknown command : KEK
+	at calculator.OperationFactory.createOperation(OperationFactory.java:41)
+	at calculator.Calculator.calculate(Calculator.java:34)
+	at Main.main(Main.java:30)
+
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+FINE: Trying to create class for command PRINT
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+FINE: Successfully created class calculator.operations.Print
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+FINE: Enter doOperation of calculator.operations.Print
+???. 08, 2020 12:14:14 PM calculator.Calculator calculate
+WARNING: Operation exception
+calculator.calculatorExceptions.StackSizeException: Too few elements on stack for calculator.operations.Print ( >= 1 needed)
+	at calculator.operations.Print.isValid(Print.java:25)
+	at calculator.operations.Print.doOperation(Print.java:14)
+	at calculator.Calculator.calculate(Calculator.java:45)
+	at Main.main(Main.java:30)
+
+???. 08, 2020 12:14:14 PM Main main
+INFO: Successfully ended calculation!
