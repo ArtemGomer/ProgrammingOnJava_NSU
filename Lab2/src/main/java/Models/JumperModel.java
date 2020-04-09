@@ -7,6 +7,8 @@ import Observers.Observable;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.prefs.Preferences;
 
 import static Constants.JumperConstants.*;
@@ -16,10 +18,17 @@ public class JumperModel implements Observable {
     private ArrayList<Block> blocks;
     private boolean lost;
     private Integer score = 0;
+    private Timer timer;
 
     public JumperModel() {
+        System.out.println("constructor");
         character = new Character();
         blocks = new ArrayList<>();
+        timer = new Timer();
+    }
+
+    public boolean isLost(){
+        return lost;
     }
 
     public void addBlock() {
@@ -53,25 +62,38 @@ public class JumperModel implements Observable {
         }
     }
 
-    public boolean makeGameStep() {
+    private void makeGameStep() {
         notifyObservers();
         character.move(blocks);
         moveBlocks();
         replaceBlocks();
         if (character.isOnBottom()) {
+            System.out.println("on bottom");
             lost = true;
+            timer.cancel();
+//            timer.purge();
+            System.out.println("cancelled");
             saveScore();
+            notifyObservers();
         }
-        return lost;
+
     }
 
     public void initGame() {
         score = 0;
+        lost = false;
         character.toStartPosition();
         blocks.add(new StandardBlock(FRAME_WIDTH / 2 - BLOCK_WIDTH / 2, FRAME_HEIGHT - 20));
         for (int i = 0; i < MAX_AMOUNT_OF_BLOCKS; i++) {
             addBlock();
         }
+        System.out.println("start timer");
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                makeGameStep();
+            }
+        }, 1000, DELAY);
     }
 
     public ArrayList<Block> getBlocks() {

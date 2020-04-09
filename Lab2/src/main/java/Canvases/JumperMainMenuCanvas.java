@@ -8,9 +8,9 @@ import java.awt.event.MouseEvent;
 import static Constants.JumperConstants.*;
 import static Constants.JumperConstants.BUTTON_HEIGHT;
 
-public class MainMenuCanvas extends JPanel{
+public class JumperMainMenuCanvas extends JPanel{
 
-    public MainMenuCanvas(Container panes){
+    public JumperMainMenuCanvas(Container panes){
         setPreferredSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
         setLayout(null);
 

@@ -23,7 +23,7 @@ public class JumperFrame extends JFrame {
         setIconImage(new ImageIcon(getClass().getResource("/characters/Male_icon.png")).getImage());
         setBackground(Color.BLACK);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        getContentPane().add(new MainMenuCanvas(getContentPane()));
+        getContentPane().add(new JumperMainMenuCanvas(getContentPane()));
         getContentPane().revalidate();
         pack();
         setLocationRelativeTo(null);

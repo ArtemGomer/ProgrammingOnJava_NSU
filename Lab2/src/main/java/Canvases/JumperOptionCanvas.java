@@ -27,7 +27,7 @@ public class JumperOptionCanvas extends JPanel {
             @Override
             public void mouseReleased(MouseEvent e) {
                 container.removeAll();
-                container.add(new MainMenuCanvas(container));
+                container.add(new JumperMainMenuCanvas(container));
                 container.revalidate();
             }
 
@@ -121,10 +121,10 @@ public class JumperOptionCanvas extends JPanel {
         add(radioGrass);
         add(radioCake);
         add(blockIcon);
+    }
 
-        JLabel background = new JLabel();
-        background.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
-        background.setIcon(new ImageIcon(getClass().getResource("/backgrounds/backgroundGame.png")));
-        add(background);
+    @Override
+    protected void paintComponent(Graphics g) {
+        g.drawImage(new ImageIcon(getClass().getResource("/backgrounds/backgroundGame.png")).getImage(), 0 , 0, FRAME_WIDTH, FRAME_HEIGHT, null);
     }
 }

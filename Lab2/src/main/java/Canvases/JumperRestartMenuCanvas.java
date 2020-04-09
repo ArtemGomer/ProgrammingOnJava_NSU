@@ -8,8 +8,8 @@ import java.util.prefs.Preferences;
 
 import static Constants.JumperConstants.*;
 
-public class RestartMenuCanvas extends JPanel {
-    public RestartMenuCanvas(Container panes){
+public class JumperRestartMenuCanvas extends JPanel {
+    public JumperRestartMenuCanvas(Container panes){
         setPreferredSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
         setLayout(null);
         JButton restartButton = new JButton(new ImageIcon(getClass().getResource("/buttons/button_blue_repeat.png")));
@@ -32,10 +32,8 @@ public class RestartMenuCanvas extends JPanel {
             @Override
             public void mouseReleased(MouseEvent e) {
                 panes.removeAll();
-                JPanel panel = new JumperGameCanvas(panes);
-                panes.add(panel);
+                panes.add(new JumperGameCanvas(panes));
                 panes.revalidate();
-                panel.requestFocus();
             }
         });
 
@@ -49,7 +47,7 @@ public class RestartMenuCanvas extends JPanel {
             @Override
             public void mouseReleased(MouseEvent e) {
                 panes.removeAll();
-                panes.add(new MainMenuCanvas(panes));
+                panes.add(new JumperMainMenuCanvas(panes));
                 panes.revalidate();
             }
 

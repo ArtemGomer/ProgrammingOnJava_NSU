@@ -31,7 +31,7 @@ public class JumperRecordsCanvas extends JPanel {
             @Override
             public void mouseReleased(MouseEvent e) {
                 panes.removeAll();
-                panes.add(new MainMenuCanvas(panes));
+                panes.add(new JumperMainMenuCanvas(panes));
                 panes.revalidate();
             }
 

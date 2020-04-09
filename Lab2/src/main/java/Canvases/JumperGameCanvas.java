@@ -14,19 +14,16 @@ import java.util.prefs.Preferences;
 
 import static Constants.JumperConstants.*;
 
-public class JumperGameCanvas extends JPanel implements Observer, ActionListener {
+public class JumperGameCanvas extends JPanel implements Observer {
     private JumperModel model;
     private Image character, standardBlock, sandNormalBlock, sandBrokenBlock, snowBlock, background;
-    private Timer timer = new Timer(DELAY, this);
-    private Container container;
+    private Container panes;
     private JLabel score = new JLabel("0");
-
-
 
     public JumperGameCanvas(Container panes){
         setPreferredSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
-        container = panes;
-        Preferences prefs = Preferences.userRoot().node("options");;
+        this.panes = panes;
+        Preferences prefs = Preferences.userRoot().node("options");
 
         character = new ImageIcon(getClass().getResource("/characters/" + prefs.get("sex", "Male") + "_icon.png")).getImage();
         standardBlock = new ImageIcon(getClass().getResource("/blocks/" + prefs.get("block", "Grass") + "_icon.png")).getImage();
@@ -50,21 +47,25 @@ public class JumperGameCanvas extends JPanel implements Observer, ActionListener
             }
         });
 
-        timer.start();
-        model.initGame();
-
-        score.setBounds(100, 20, 100, 20);
+        score.setBounds(0, 20, 400, 20);
+        score.setHorizontalAlignment(SwingConstants.CENTER);
         score.setFont(new Font("Ink Free", Font.BOLD, 40));
         add(score);
-
+        System.out.println("init");
+        model.initGame();
     }
 
     @Override
     public void update() {
         repaint();
+//        System.out.println(model.isLost() + " 1");
+        if (model.isLost()){
+            panes.removeAll();
+            JPanel panel = new JumperRestartMenuCanvas(panes);
+            panes.add(panel);
+            panes.revalidate();
+        }
     }
-
-
 
     @Override
     protected void paintComponent(Graphics g) {
@@ -89,15 +90,5 @@ public class JumperGameCanvas extends JPanel implements Observer, ActionListener
             }
         }
         g.drawImage(character, model.getCharacter().getX(), model.getCharacter().getY(), CHARACTER_WIDTH, CHARACTER_HEIGHT, null);
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if (model.makeGameStep()){
-            timer.stop();
-            container.removeAll();
-            container.add(new RestartMenuCanvas(container));
-            container.revalidate();
-        }
     }
 }
