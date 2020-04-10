@@ -32,8 +32,10 @@ public class JumperRestartMenuCanvas extends JPanel {
             @Override
             public void mouseReleased(MouseEvent e) {
                 panes.removeAll();
-                panes.add(new JumperGameCanvas(panes));
+                JPanel panel = new JumperGameCanvas(panes);
+                panes.add(panel);
                 panes.revalidate();
+                panel.requestFocus();
             }
         });
 

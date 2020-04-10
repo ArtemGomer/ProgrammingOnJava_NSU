@@ -6,8 +6,6 @@ import Observers.Observer;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.prefs.Preferences;
@@ -38,12 +36,30 @@ public class JumperGameCanvas extends JPanel implements Observer {
         addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                model.keyPressed(e);
+                switch (e.getKeyCode()) {
+                    case (KeyEvent.VK_RIGHT): {
+                        model.setRightDirection(true);
+                        break;
+                    }
+                    case (KeyEvent.VK_LEFT): {
+                        model.setLeftDirection(true);
+                        break;
+                    }
+                }
             }
 
             @Override
             public void keyReleased(KeyEvent e) {
-                model.keyReleased(e);
+                switch (e.getKeyCode()) {
+                    case (KeyEvent.VK_RIGHT): {
+                        model.setRightDirection(false);
+                        break;
+                    }
+                    case (KeyEvent.VK_LEFT): {
+                        model.setLeftDirection(false);
+                        break;
+                    }
+                }
             }
         });
 
@@ -51,14 +67,12 @@ public class JumperGameCanvas extends JPanel implements Observer {
         score.setHorizontalAlignment(SwingConstants.CENTER);
         score.setFont(new Font("Ink Free", Font.BOLD, 40));
         add(score);
-        System.out.println("init");
         model.initGame();
     }
 
     @Override
     public void update() {
         repaint();
-//        System.out.println(model.isLost() + " 1");
         if (model.isLost()){
             panes.removeAll();
             JPanel panel = new JumperRestartMenuCanvas(panes);

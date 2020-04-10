@@ -1,6 +1,5 @@
 package Models.JumperModelElements;
 
-import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 import static Constants.JumperConstants.*;
@@ -92,29 +91,12 @@ public class Character {
         return y >= FRAME_HEIGHT - CHARACTER_HEIGHT;
     }
 
-    public void keyPressed(KeyEvent e) {
-        switch (e.getKeyCode()) {
-            case (KeyEvent.VK_RIGHT): {
-                moveRight = true;
-                break;
-            }
-            case (KeyEvent.VK_LEFT): {
-                moveLeft = true;
-                break;
-            }
-        }
+    public void setMoveRight(boolean enable){
+        moveRight = enable;
     }
 
-    public void keyReleased(KeyEvent e) {
-        switch (e.getKeyCode()) {
-            case (KeyEvent.VK_RIGHT): {
-                moveRight = false;
-                break;
-            }
-            case (KeyEvent.VK_LEFT): {
-                moveLeft = false;
-                break;
-            }
-        }
+    public void setMoveLeft(boolean enable){
+        moveLeft = enable;
     }
+
 }

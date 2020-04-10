@@ -2,15 +2,19 @@ package Observers;
 
 import java.util.ArrayList;
 
-public interface Observable {
-    ArrayList<Observer> observers = new ArrayList<>();
-    default void notifyObservers(){
+public class Observable {
+    private ArrayList<Observer> observers = new ArrayList<>();
+    public void notifyObservers(){
         for (Observer observer : observers){
             observer.update();
         }
     }
 
-    default void addObserver(Observer observer){
+    public void addObserver(Observer observer){
         observers.add(observer);
+    }
+
+   public void removeAllObservers(){
+        observers.clear();
     }
 }
