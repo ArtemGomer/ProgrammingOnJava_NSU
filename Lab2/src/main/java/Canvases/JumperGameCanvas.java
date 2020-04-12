@@ -13,10 +13,10 @@ import java.util.prefs.Preferences;
 import static Constants.JumperConstants.*;
 
 public class JumperGameCanvas extends JPanel implements Observer {
-    private JumperModel model;
-    private Image character, standardBlock, sandNormalBlock, sandBrokenBlock, snowBlock, background;
-    private Container panes;
-    private JLabel score = new JLabel("0");
+    private final JumperModel model;
+    private final Image character, standardBlock, sandNormalBlock, sandBrokenBlock, snowBlock, background;
+    private final Container panes;
+    private final JLabel score = new JLabel("0");
 
     public JumperGameCanvas(Container panes){
         setPreferredSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
@@ -63,7 +63,7 @@ public class JumperGameCanvas extends JPanel implements Observer {
             }
         });
 
-        score.setBounds(0, 20, 400, 20);
+        score.setBounds(0, 20, FRAME_WIDTH, 20);
         score.setHorizontalAlignment(SwingConstants.CENTER);
         score.setFont(new Font("Ink Free", Font.BOLD, 40));
         add(score);

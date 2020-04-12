@@ -1,7 +1,5 @@
 package Models.JumperModelElements;
 
-
-
 public abstract class Block {
     protected int x, y, durability = 1;
     protected String type;

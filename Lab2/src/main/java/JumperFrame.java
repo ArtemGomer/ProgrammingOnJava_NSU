@@ -1,7 +1,6 @@
 import Canvases.*;
 
 import javax.swing.*;
-import java.awt.*;
 
 
 public class JumperFrame extends JFrame {
@@ -21,7 +20,6 @@ public class JumperFrame extends JFrame {
     private JumperFrame() {
         setTitle("Jumper");
         setIconImage(new ImageIcon(getClass().getResource("/characters/Male_icon.png")).getImage());
-        setBackground(Color.BLACK);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().add(new JumperMainMenuCanvas(getContentPane()));
         getContentPane().revalidate();

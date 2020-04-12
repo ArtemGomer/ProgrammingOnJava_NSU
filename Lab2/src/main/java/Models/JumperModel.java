@@ -13,11 +13,11 @@ import java.util.prefs.Preferences;
 import static Constants.JumperConstants.*;
 
 public class JumperModel extends Observable {
-    private Character character;
-    private ArrayList<Block> blocks;
+    private final Character character;
+    private final ArrayList<Block> blocks;
     private boolean lost;
     private Integer score = 0;
-    private Timer timer;
+    private final Timer timer;
 
     public JumperModel() {
         character = new Character();
@@ -25,7 +25,7 @@ public class JumperModel extends Observable {
         timer = new Timer();
     }
 
-    public boolean isLost(){
+    public boolean isLost() {
         return lost;
     }
 
@@ -61,7 +61,6 @@ public class JumperModel extends Observable {
     }
 
     private void makeGameStep() {
-        notifyObservers();
         character.move(blocks);
         moveBlocks();
         replaceBlocks();
@@ -69,9 +68,8 @@ public class JumperModel extends Observable {
             lost = true;
             timer.cancel();
             saveScore();
-            notifyObservers();
         }
-
+        notifyObservers();
     }
 
     public void initGame() {
@@ -88,6 +86,7 @@ public class JumperModel extends Observable {
                 makeGameStep();
             }
         }, 0, DELAY);
+        notifyObservers();
     }
 
     public ArrayList<Block> getBlocks() {
@@ -98,26 +97,26 @@ public class JumperModel extends Observable {
         return character;
     }
 
-    public void setRightDirection(boolean enable){
+    public void setRightDirection(boolean enable) {
         character.setMoveRight(enable);
     }
 
-    public void setLeftDirection(boolean enable){
+    public void setLeftDirection(boolean enable) {
         character.setMoveLeft(enable);
     }
 
     public Integer getScore() {
-        return score/100;
+        return score / 100;
     }
 
-    public void saveScore(){
+    public void saveScore() {
         Preferences prefs = Preferences.userRoot().node("records");
         prefs.putInt("0", getScore());
 
-        for (int pos = 10; pos > 0; pos--){
-            if (prefs.getInt(Integer.valueOf(pos).toString(), 0) >= getScore()){
-                if (pos + 1 <= 10){
-                    for (int shift = 10; shift >= pos + 2; shift--){
+        for (int pos = 10; pos > 0; pos--) {
+            if (prefs.getInt(Integer.valueOf(pos).toString(), 0) >= getScore()) {
+                if (pos + 1 <= 10) {
+                    for (int shift = 10; shift >= pos + 2; shift--) {
                         prefs.putInt(Integer.valueOf(shift).toString(), prefs.getInt(Integer.valueOf(shift - 1).toString(), 0));
                     }
                     prefs.putInt(Integer.valueOf(pos + 1).toString(), getScore());
@@ -125,7 +124,7 @@ public class JumperModel extends Observable {
                 }
             }
         }
-        for (int shift = 10; shift >= 2; shift--){
+        for (int shift = 10; shift >= 2; shift--) {
             prefs.putInt(Integer.valueOf(shift).toString(), prefs.getInt(Integer.valueOf(shift - 1).toString(), 0));
         }
         prefs.putInt(Integer.valueOf(1).toString(), getScore());

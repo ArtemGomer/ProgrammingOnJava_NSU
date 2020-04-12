@@ -16,10 +16,6 @@ public class Character {
         return y;
     }
 
-    public int getXSpeed() {
-        return xSpeed;
-    }
-
     public int getYSpeed() {
         return ySpeed;
     }
