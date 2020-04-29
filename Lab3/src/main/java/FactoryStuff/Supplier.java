@@ -18,7 +18,7 @@ public class Supplier<T> extends Thread{
         this.detailType = detailType;
     }
 
-    public void createDetail(Class<T> detailType) throws InterruptedException {
+    public void createDetail() throws InterruptedException {
         try {
             T detail = detailType.getDeclaredConstructor().newInstance();
             logger.info("Successfully created detail {}.", detailType.getSimpleName());
@@ -36,7 +36,7 @@ public class Supplier<T> extends Thread{
         while(!this.isInterrupted()){
             try {
                 logger.info("Trying to create detail {}.", detailType.getSimpleName());
-                this.createDetail(detailType);
+                this.createDetail();
                 Thread.sleep(DELAY);
             } catch (InterruptedException ex) {
                 break;

@@ -1,203 +1,315 @@
-2020-04-27 19:32:30,609 INFO Factory.Factory [main] Trying to create factory.
-2020-04-27 19:32:30,619 INFO Factory.Factory [main] Factory successfully created. Start of factory.
-2020-04-27 19:32:30,621 INFO FactoryStuff.Dealer [Thread-5] Trying to buy auto.
-2020-04-27 19:32:30,621 INFO FactoryStuff.Dealer [Thread-6] Trying to buy auto.
-2020-04-27 19:32:30,622 INFO FactoryStuff.AutoStorageController [Thread-5] Create task to make some autos.
-2020-04-27 19:32:30,623 INFO Storage.Storage [Thread-5] Storage is empty. Waiting...
-2020-04-27 19:32:30,623 INFO FactoryStuff.AutoStorageController [Thread-6] Create task to make some autos.
-2020-04-27 19:32:30,620 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
-2020-04-27 19:32:30,623 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to create auto.
-2020-04-27 19:32:30,620 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
-2020-04-27 19:32:30,623 INFO Storage.Storage [Thread-6] Storage is empty. Waiting...
-2020-04-27 19:32:30,620 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
-2020-04-27 19:32:30,624 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to create auto.
-2020-04-27 19:32:30,620 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
-2020-04-27 19:32:30,620 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
-2020-04-27 19:32:30,623 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get body.
-2020-04-27 19:32:30,624 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get body.
-2020-04-27 19:32:30,624 INFO Storage.Storage [pool-1-thread-1] Storage is empty. Waiting...
-2020-04-27 19:32:30,625 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:30,765 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
-2020-04-27 19:32:30,765 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
-2020-04-27 19:32:30,765 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
-2020-04-27 19:32:30,765 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
-2020-04-27 19:32:30,765 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
-2020-04-27 19:32:30,766 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
-2020-04-27 19:32:30,765 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
-2020-04-27 19:32:30,766 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
-2020-04-27 19:32:30,766 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
-2020-04-27 19:32:30,766 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 3.
-2020-04-27 19:32:30,766 INFO Storage.Storage [pool-1-thread-1] Detail Body was got. Number of details : 0
-2020-04-27 19:32:30,766 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get motor.
-2020-04-27 19:32:30,766 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:30,766 INFO Storage.Storage [pool-1-thread-1] Detail Motor was got. Number of details : 0
-2020-04-27 19:32:30,766 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get accessories.
-2020-04-27 19:32:30,766 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 2
-2020-04-27 19:32:30,766 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 1
-2020-04-27 19:32:30,766 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 0
-2020-04-27 19:32:30,767 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to add auto.
-2020-04-27 19:32:30,767 INFO Storage.Storage [pool-1-thread-1] New detail Auto was added. Number of details Auto : 1.
-2020-04-27 19:32:30,767 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Auto was successfully created.
-2020-04-27 19:32:30,768 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to create auto.
-2020-04-27 19:32:30,767 INFO Storage.Storage [Thread-5] Detail Auto was got. Number of details : 0
-2020-04-27 19:32:30,768 INFO FactoryStuff.Dealer [Thread-5] Auto was bought. Number of autos : 0
-2020-04-27 19:32:30,768 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get body.
-2020-04-27 19:32:30,768 INFO Storage.Storage [pool-1-thread-1] Storage is empty. Waiting...
-2020-04-27 19:32:30,768 INFO Storage.Storage [Thread-6] Storage is empty. Waiting...
-2020-04-27 19:32:31,766 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
-2020-04-27 19:32:31,766 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
-2020-04-27 19:32:31,766 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
-2020-04-27 19:32:31,766 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
-2020-04-27 19:32:31,766 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
-2020-04-27 19:32:31,768 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
-2020-04-27 19:32:31,768 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
-2020-04-27 19:32:31,768 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
-2020-04-27 19:32:31,769 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
-2020-04-27 19:32:31,769 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
-2020-04-27 19:32:31,767 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
-2020-04-27 19:32:31,769 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 2.
-2020-04-27 19:32:31,769 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
-2020-04-27 19:32:31,770 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 3.
-2020-04-27 19:32:31,770 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
-2020-04-27 19:32:31,770 INFO Storage.Storage [pool-1-thread-2] Detail Body was got. Number of details : 0
-2020-04-27 19:32:31,771 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get motor.
-2020-04-27 19:32:31,771 INFO Storage.Storage [pool-1-thread-1] Storage is empty. Waiting...
-2020-04-27 19:32:31,771 INFO Storage.Storage [pool-1-thread-2] Detail Motor was got. Number of details : 0
-2020-04-27 19:32:31,771 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get accessories.
-2020-04-27 19:32:31,771 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 2
-2020-04-27 19:32:31,771 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 1
-2020-04-27 19:32:31,771 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 0
-2020-04-27 19:32:31,771 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to add auto.
-2020-04-27 19:32:31,771 INFO Storage.Storage [pool-1-thread-2] New detail Auto was added. Number of details Auto : 1.
-2020-04-27 19:32:31,771 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Auto was successfully created.
-2020-04-27 19:32:31,771 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to create auto.
-2020-04-27 19:32:31,771 INFO Storage.Storage [Thread-6] Detail Auto was got. Number of details : 0
-2020-04-27 19:32:31,771 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get body.
-2020-04-27 19:32:31,771 INFO FactoryStuff.Dealer [Thread-6] Auto was bought. Number of autos : 0
-2020-04-27 19:32:31,771 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:32,769 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
-2020-04-27 19:32:32,769 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
-2020-04-27 19:32:32,770 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
-2020-04-27 19:32:32,770 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
-2020-04-27 19:32:32,770 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
-2020-04-27 19:32:32,770 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
-2020-04-27 19:32:32,770 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
-2020-04-27 19:32:32,770 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
-2020-04-27 19:32:32,771 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
-2020-04-27 19:32:32,772 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
-2020-04-27 19:32:32,772 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
-2020-04-27 19:32:32,772 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
-2020-04-27 19:32:32,772 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 2.
-2020-04-27 19:32:32,772 INFO Storage.Storage [pool-1-thread-1] Detail Body was got. Number of details : 0
-2020-04-27 19:32:32,773 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
-2020-04-27 19:32:32,773 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:32,773 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get motor.
-2020-04-27 19:32:32,773 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 3.
-2020-04-27 19:32:32,774 INFO Storage.Storage [pool-1-thread-1] Detail Motor was got. Number of details : 0
-2020-04-27 19:32:32,774 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get accessories.
-2020-04-27 19:32:32,774 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 2
-2020-04-27 19:32:32,774 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 1
-2020-04-27 19:32:32,774 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 0
-2020-04-27 19:32:32,775 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to add auto.
-2020-04-27 19:32:32,775 INFO Storage.Storage [pool-1-thread-1] New detail Auto was added. Number of details Auto : 1.
-2020-04-27 19:32:32,775 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Auto was successfully created.
-2020-04-27 19:32:32,775 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to create auto.
-2020-04-27 19:32:32,775 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get body.
-2020-04-27 19:32:32,775 INFO Storage.Storage [pool-1-thread-1] Storage is empty. Waiting...
-2020-04-27 19:32:33,772 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
-2020-04-27 19:32:33,772 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
-2020-04-27 19:32:33,773 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
-2020-04-27 19:32:33,773 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
-2020-04-27 19:32:33,773 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
-2020-04-27 19:32:33,773 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
-2020-04-27 19:32:33,774 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
-2020-04-27 19:32:33,774 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
-2020-04-27 19:32:33,774 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
-2020-04-27 19:32:33,774 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
-2020-04-27 19:32:33,775 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 2.
-2020-04-27 19:32:33,775 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
-2020-04-27 19:32:33,775 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
-2020-04-27 19:32:33,775 INFO Storage.Storage [pool-1-thread-2] Detail Body was got. Number of details : 0
-2020-04-27 19:32:33,776 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
-2020-04-27 19:32:33,776 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get motor.
-2020-04-27 19:32:33,776 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 3.
-2020-04-27 19:32:33,776 INFO Storage.Storage [pool-1-thread-1] Storage is empty. Waiting...
-2020-04-27 19:32:33,776 INFO Storage.Storage [pool-1-thread-2] Detail Motor was got. Number of details : 0
-2020-04-27 19:32:33,777 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get accessories.
-2020-04-27 19:32:33,777 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 2
-2020-04-27 19:32:33,778 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 1
-2020-04-27 19:32:33,778 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 0
-2020-04-27 19:32:33,778 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to add auto.
-2020-04-27 19:32:33,778 INFO Storage.Storage [pool-1-thread-2] New detail Auto was added. Number of details Auto : 2.
-2020-04-27 19:32:33,778 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Auto was successfully created.
-2020-04-27 19:32:33,778 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to create auto.
-2020-04-27 19:32:33,778 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get body.
-2020-04-27 19:32:33,778 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:34,774 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
-2020-04-27 19:32:34,774 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
-2020-04-27 19:32:34,774 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
-2020-04-27 19:32:34,775 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
-2020-04-27 19:32:34,775 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
-2020-04-27 19:32:34,775 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
-2020-04-27 19:32:34,775 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
-2020-04-27 19:32:34,776 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
-2020-04-27 19:32:34,776 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
-2020-04-27 19:32:34,776 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
-2020-04-27 19:32:34,776 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 2.
-2020-04-27 19:32:34,776 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
-2020-04-27 19:32:34,777 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
-2020-04-27 19:32:34,777 INFO Storage.Storage [pool-1-thread-1] Detail Body was got. Number of details : 0
-2020-04-27 19:32:34,777 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get motor.
-2020-04-27 19:32:34,777 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:34,777 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
-2020-04-27 19:32:34,777 INFO Storage.Storage [pool-1-thread-1] Detail Motor was got. Number of details : 0
-2020-04-27 19:32:34,778 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get accessories.
-2020-04-27 19:32:34,778 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 3.
-2020-04-27 19:32:34,779 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 2
-2020-04-27 19:32:34,779 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 1
-2020-04-27 19:32:34,779 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 0
-2020-04-27 19:32:34,779 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to add auto.
-2020-04-27 19:32:34,779 INFO Storage.Storage [pool-1-thread-1] New detail Auto was added. Number of details Auto : 3.
-2020-04-27 19:32:34,779 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Auto was successfully created.
-2020-04-27 19:32:34,779 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to create auto.
-2020-04-27 19:32:34,779 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get body.
-2020-04-27 19:32:34,779 INFO Storage.Storage [pool-1-thread-1] Storage is empty. Waiting...
-2020-04-27 19:32:35,769 INFO FactoryStuff.Dealer [Thread-5] Trying to buy auto.
-2020-04-27 19:32:35,769 INFO FactoryStuff.AutoStorageController [Thread-5] Create task to make some autos.
-2020-04-27 19:32:35,770 INFO Storage.Storage [Thread-5] Detail Auto was got. Number of details : 2
-2020-04-27 19:32:35,771 INFO FactoryStuff.Dealer [Thread-5] Auto was bought. Number of autos : 2
-2020-04-27 19:32:35,771 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to create auto.
-2020-04-27 19:32:35,771 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to get body.
-2020-04-27 19:32:35,771 INFO Storage.Storage [pool-1-thread-3] Storage is empty. Waiting...
-2020-04-27 19:32:35,777 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
-2020-04-27 19:32:35,777 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
-2020-04-27 19:32:35,778 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
-2020-04-27 19:32:35,778 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
-2020-04-27 19:32:35,778 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
-2020-04-27 19:32:35,779 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
-2020-04-27 19:32:35,779 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
-2020-04-27 19:32:35,780 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
-2020-04-27 19:32:35,780 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
-2020-04-27 19:32:35,780 INFO Storage.Storage [pool-1-thread-2] Detail Body was got. Number of details : 0
-2020-04-27 19:32:35,781 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get motor.
-2020-04-27 19:32:35,781 INFO Storage.Storage [pool-1-thread-2] Detail Motor was got. Number of details : 0
-2020-04-27 19:32:35,781 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get accessories.
-2020-04-27 19:32:35,781 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:35,781 INFO Storage.Storage [pool-1-thread-1] Storage is empty. Waiting...
-2020-04-27 19:32:35,783 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
-2020-04-27 19:32:35,783 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
-2020-04-27 19:32:35,783 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
-2020-04-27 19:32:35,783 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 2.
-2020-04-27 19:32:35,783 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 1
-2020-04-27 19:32:35,783 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
-2020-04-27 19:32:35,784 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 0
-2020-04-27 19:32:35,784 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:35,784 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 1.
-2020-04-27 19:32:35,784 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 0
-2020-04-27 19:32:35,784 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to add auto.
-2020-04-27 19:32:35,784 INFO Storage.Storage [pool-1-thread-2] New detail Auto was added. Number of details Auto : 3.
-2020-04-27 19:32:35,784 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Auto was successfully created.
-2020-04-27 19:32:35,784 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to create auto.
-2020-04-27 19:32:35,784 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get body.
-2020-04-27 19:32:35,784 INFO Storage.Storage [pool-1-thread-2] Storage is empty. Waiting...
-2020-04-27 19:32:36,340 INFO Factory.Factory [main] Stop of factory.
+2020-04-29 16:55:32,905 INFO Main [main] Trying to create factory.
+2020-04-29 16:55:32,917 INFO Main [main] Factory successfully created. Start of factory.
+2020-04-29 16:55:32,918 INFO FactoryStuff.Dealer [Thread-5] Trying to buy auto.
+2020-04-29 16:55:32,919 INFO FactoryStuff.AutoStorageController [Thread-5] Create tasks to make some autos.
+2020-04-29 16:55:32,918 INFO FactoryStuff.Dealer [Thread-6] Trying to buy auto.
+2020-04-29 16:55:32,918 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:32,918 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:32,918 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:32,918 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:32,918 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:32,921 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to create auto.
+2020-04-29 16:55:32,921 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get body.
+2020-04-29 16:55:32,921 INFO Storage.Storage [pool-1-thread-2] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:32,921 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to create auto.
+2020-04-29 16:55:32,921 INFO Storage.Storage [Thread-5] Storage of details Auto is empty. Waiting...
+2020-04-29 16:55:32,921 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to get body.
+2020-04-29 16:55:32,921 INFO Storage.Storage [pool-1-thread-3] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:32,921 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to create auto.
+2020-04-29 16:55:32,921 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to create auto.
+2020-04-29 16:55:32,921 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to create auto.
+2020-04-29 16:55:32,922 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to get body.
+2020-04-29 16:55:32,922 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get body.
+2020-04-29 16:55:32,922 INFO Storage.Storage [pool-1-thread-5] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:32,922 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to get body.
+2020-04-29 16:55:32,922 INFO Storage.Storage [Thread-6] Storage of details Auto is empty. Waiting...
+2020-04-29 16:55:32,922 INFO Storage.Storage [pool-1-thread-1] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:32,923 INFO Storage.Storage [pool-1-thread-4] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:33,066 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:33,066 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:33,066 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:33,066 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:33,066 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:33,066 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:33,066 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:33,067 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 3.
+2020-04-29 16:55:33,067 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:33,067 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:33,067 INFO Storage.Storage [pool-1-thread-2] Detail Body was got. Number of details : 0
+2020-04-29 16:55:33,067 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get motor.
+2020-04-29 16:55:33,067 INFO Storage.Storage [pool-1-thread-2] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:33,067 INFO Storage.Storage [pool-1-thread-3] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:33,067 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get accessories.
+2020-04-29 16:55:33,067 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 2
+2020-04-29 16:55:33,067 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:33,067 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:33,068 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to add auto.
+2020-04-29 16:55:33,068 INFO Storage.Storage [pool-1-thread-2] New detail Auto was added. Number of details Auto : 1.
+2020-04-29 16:55:33,068 INFO Storage.Storage [Thread-5] Detail Auto was got. Number of details : 0
+2020-04-29 16:55:33,068 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Auto was successfully created.
+2020-04-29 16:55:33,068 INFO FactoryStuff.Dealer [Thread-5] Auto was bought. Number of autos : 0
+2020-04-29 16:55:33,068 INFO Storage.Storage [Thread-6] Storage of details Auto is empty. Waiting...
+2020-04-29 16:55:34,067 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:34,067 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:34,068 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:34,069 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:34,069 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:34,070 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:34,067 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:34,071 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:34,071 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:34,072 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:34,072 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:34,072 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:34,073 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:34,073 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:34,073 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 3.
+2020-04-29 16:55:34,074 INFO Storage.Storage [pool-1-thread-5] Detail Body was got. Number of details : 0
+2020-04-29 16:55:34,074 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to get motor.
+2020-04-29 16:55:34,074 INFO Storage.Storage [pool-1-thread-1] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:34,074 INFO Storage.Storage [pool-1-thread-5] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:34,074 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to get accessories.
+2020-04-29 16:55:34,075 INFO Storage.Storage [pool-1-thread-5] Detail Accessory was got. Number of details : 2
+2020-04-29 16:55:34,075 INFO Storage.Storage [pool-1-thread-5] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:34,075 INFO Storage.Storage [pool-1-thread-5] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:34,076 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to add auto.
+2020-04-29 16:55:34,076 INFO Storage.Storage [pool-1-thread-5] New detail Auto was added. Number of details Auto : 1.
+2020-04-29 16:55:34,076 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Auto was successfully created.
+2020-04-29 16:55:34,077 INFO Storage.Storage [Thread-6] Detail Auto was got. Number of details : 0
+2020-04-29 16:55:34,077 INFO FactoryStuff.Dealer [Thread-6] Auto was bought. Number of autos : 0
+2020-04-29 16:55:35,070 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:35,071 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:35,071 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:35,071 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:35,071 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:35,071 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:35,073 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:35,073 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:35,074 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:35,074 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:35,074 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:35,074 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:35,074 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:35,075 INFO Storage.Storage [pool-1-thread-4] Detail Body was got. Number of details : 0
+2020-04-29 16:55:35,076 INFO Storage.Storage [pool-1-thread-3] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:35,075 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:35,076 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to get motor.
+2020-04-29 16:55:35,077 INFO Storage.Storage [pool-1-thread-4] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:35,077 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 3.
+2020-04-29 16:55:35,078 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to get accessories.
+2020-04-29 16:55:35,078 INFO Storage.Storage [pool-1-thread-4] Detail Accessory was got. Number of details : 2
+2020-04-29 16:55:35,078 INFO Storage.Storage [pool-1-thread-4] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:35,078 INFO Storage.Storage [pool-1-thread-4] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:35,080 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to add auto.
+2020-04-29 16:55:35,080 INFO Storage.Storage [pool-1-thread-4] New detail Auto was added. Number of details Auto : 1.
+2020-04-29 16:55:35,080 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Auto was successfully created.
+2020-04-29 16:55:36,072 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:36,073 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:36,073 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:36,073 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:36,073 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:36,074 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:36,075 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:36,076 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:36,076 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:36,076 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:36,077 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:36,078 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:36,078 INFO Storage.Storage [pool-1-thread-1] Detail Body was got. Number of details : 0
+2020-04-29 16:55:36,078 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get motor.
+2020-04-29 16:55:36,079 INFO Storage.Storage [pool-1-thread-1] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:36,079 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get accessories.
+2020-04-29 16:55:36,080 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:36,079 INFO Storage.Storage [pool-1-thread-3] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:36,081 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:36,082 INFO Storage.Storage [pool-1-thread-1] Storage of details Accessory is empty. Waiting...
+2020-04-29 16:55:36,082 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:36,083 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:36,084 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:36,084 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:36,085 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to add auto.
+2020-04-29 16:55:36,085 INFO Storage.Storage [pool-1-thread-1] New detail Auto was added. Number of details Auto : 2.
+2020-04-29 16:55:36,086 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Auto was successfully created.
+2020-04-29 16:55:37,073 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:37,074 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:37,074 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:37,074 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:37,075 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:37,075 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:37,077 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:37,077 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:37,078 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:37,078 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:37,078 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:37,079 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:37,080 INFO Storage.Storage [pool-1-thread-3] Detail Body was got. Number of details : 0
+2020-04-29 16:55:37,080 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to get motor.
+2020-04-29 16:55:37,080 INFO Storage.Storage [pool-1-thread-3] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:37,081 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to get accessories.
+2020-04-29 16:55:37,081 INFO Storage.Storage [pool-1-thread-3] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:37,081 INFO Storage.Storage [pool-1-thread-3] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:37,082 INFO Storage.Storage [pool-1-thread-3] Storage of details Accessory is empty. Waiting...
+2020-04-29 16:55:37,084 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:37,085 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:37,086 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:37,087 INFO Storage.Storage [pool-1-thread-3] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:37,087 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to add auto.
+2020-04-29 16:55:37,088 INFO Storage.Storage [pool-1-thread-3] New detail Auto was added. Number of details Auto : 3.
+2020-04-29 16:55:37,088 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Auto was successfully created.
+2020-04-29 16:55:38,069 INFO FactoryStuff.Dealer [Thread-5] Trying to buy auto.
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [Thread-5] Create tasks to make some autos.
+2020-04-29 16:55:38,069 INFO Storage.Storage [Thread-5] Detail Auto was got. Number of details : 2
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to create auto.
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to create auto.
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get body.
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to get body.
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to create auto.
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to create auto.
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get body.
+2020-04-29 16:55:38,069 INFO Storage.Storage [pool-1-thread-2] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to create auto.
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to get body.
+2020-04-29 16:55:38,069 INFO Storage.Storage [pool-1-thread-1] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:38,069 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to get body.
+2020-04-29 16:55:38,069 INFO FactoryStuff.Dealer [Thread-5] Auto was bought. Number of autos : 2
+2020-04-29 16:55:38,069 INFO Storage.Storage [pool-1-thread-5] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:38,069 INFO Storage.Storage [pool-1-thread-3] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:38,069 INFO Storage.Storage [pool-1-thread-4] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:38,074 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:38,074 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:38,074 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:38,075 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:38,077 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:38,077 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:38,078 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:38,078 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:38,078 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:38,080 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:38,080 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:38,080 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:38,080 INFO Storage.Storage [pool-1-thread-2] Detail Body was got. Number of details : 0
+2020-04-29 16:55:38,080 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get motor.
+2020-04-29 16:55:38,080 INFO Storage.Storage [pool-1-thread-1] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:38,080 INFO Storage.Storage [pool-1-thread-2] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:38,080 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to get accessories.
+2020-04-29 16:55:38,080 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:38,080 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:38,080 INFO Storage.Storage [pool-1-thread-2] Storage of details Accessory is empty. Waiting...
+2020-04-29 16:55:38,086 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:38,086 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:38,086 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:38,086 INFO Storage.Storage [pool-1-thread-2] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:38,086 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Trying to add auto.
+2020-04-29 16:55:38,086 INFO Storage.Storage [pool-1-thread-2] New detail Auto was added. Number of details Auto : 3.
+2020-04-29 16:55:38,086 INFO FactoryStuff.AutoStorageController [pool-1-thread-2] Auto was successfully created.
+2020-04-29 16:55:39,075 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:39,075 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:39,075 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:39,077 INFO FactoryStuff.Dealer [Thread-6] Trying to buy auto.
+2020-04-29 16:55:39,077 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:39,077 INFO Storage.Storage [Thread-6] Detail Auto was got. Number of details : 2
+2020-04-29 16:55:39,077 INFO FactoryStuff.Dealer [Thread-6] Auto was bought. Number of autos : 2
+2020-04-29 16:55:39,077 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:39,078 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:39,078 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:39,078 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:39,078 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:39,081 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:39,081 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:39,082 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:39,082 INFO Storage.Storage [pool-1-thread-5] Detail Body was got. Number of details : 0
+2020-04-29 16:55:39,083 INFO Storage.Storage [pool-1-thread-3] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:39,083 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to get motor.
+2020-04-29 16:55:39,083 INFO Storage.Storage [pool-1-thread-5] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:39,084 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to get accessories.
+2020-04-29 16:55:39,087 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:39,087 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:39,096 INFO Storage.Storage [pool-1-thread-5] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:39,096 INFO Storage.Storage [pool-1-thread-5] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:39,096 INFO Storage.Storage [pool-1-thread-5] Storage of details Accessory is empty. Waiting...
+2020-04-29 16:55:39,096 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:39,096 INFO Storage.Storage [pool-1-thread-5] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:39,096 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Trying to add auto.
+2020-04-29 16:55:39,096 INFO Storage.Storage [pool-1-thread-5] New detail Auto was added. Number of details Auto : 3.
+2020-04-29 16:55:39,097 INFO FactoryStuff.AutoStorageController [pool-1-thread-5] Auto was successfully created.
+2020-04-29 16:55:40,076 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:40,076 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:40,076 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:40,079 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:40,079 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:40,079 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:40,079 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:40,080 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:40,080 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:40,084 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:40,084 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:40,084 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:40,085 INFO Storage.Storage [pool-1-thread-4] Detail Body was got. Number of details : 0
+2020-04-29 16:55:40,085 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to get motor.
+2020-04-29 16:55:40,085 INFO Storage.Storage [pool-1-thread-4] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:40,085 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to get accessories.
+2020-04-29 16:55:40,086 INFO Storage.Storage [pool-1-thread-1] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:40,086 INFO Storage.Storage [pool-1-thread-4] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:40,086 INFO Storage.Storage [pool-1-thread-4] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:40,086 INFO Storage.Storage [pool-1-thread-4] Storage of details Accessory is empty. Waiting...
+2020-04-29 16:55:40,097 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:40,097 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:40,098 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:40,099 INFO Storage.Storage [pool-1-thread-4] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:40,100 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Trying to add auto.
+2020-04-29 16:55:40,100 INFO Storage.Storage [pool-1-thread-4] New detail Auto was added. Number of details Auto : 4.
+2020-04-29 16:55:40,100 INFO FactoryStuff.AutoStorageController [pool-1-thread-4] Auto was successfully created.
+2020-04-29 16:55:41,077 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:41,077 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:41,078 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:41,080 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:41,080 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:41,080 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:41,080 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:41,080 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:41,081 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:41,084 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:41,084 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:41,084 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:41,085 INFO Storage.Storage [pool-1-thread-3] Detail Body was got. Number of details : 0
+2020-04-29 16:55:41,085 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to get motor.
+2020-04-29 16:55:41,085 INFO Storage.Storage [pool-1-thread-1] Storage of details Body is empty. Waiting...
+2020-04-29 16:55:41,085 INFO Storage.Storage [pool-1-thread-3] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:41,085 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to get accessories.
+2020-04-29 16:55:41,085 INFO Storage.Storage [pool-1-thread-3] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:41,086 INFO Storage.Storage [pool-1-thread-3] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:41,086 INFO Storage.Storage [pool-1-thread-3] Storage of details Accessory is empty. Waiting...
+2020-04-29 16:55:41,099 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:41,099 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:41,100 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:41,100 INFO Storage.Storage [pool-1-thread-3] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:41,100 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Trying to add auto.
+2020-04-29 16:55:41,100 INFO Storage.Storage [pool-1-thread-3] New detail Auto was added. Number of details Auto : 5.
+2020-04-29 16:55:41,100 INFO FactoryStuff.AutoStorageController [pool-1-thread-3] Auto was successfully created.
+2020-04-29 16:55:42,079 INFO FactoryStuff.Supplier [Thread-1] Trying to create detail Motor.
+2020-04-29 16:55:42,079 INFO FactoryStuff.Supplier [Thread-1] Successfully created detail Motor.
+2020-04-29 16:55:42,079 INFO Storage.Storage [Thread-1] New detail Motor was added. Number of details Motor : 1.
+2020-04-29 16:55:42,082 INFO FactoryStuff.Supplier [Thread-2] Trying to create detail Accessory.
+2020-04-29 16:55:42,082 INFO FactoryStuff.Supplier [Thread-4] Trying to create detail Accessory.
+2020-04-29 16:55:42,083 INFO FactoryStuff.Supplier [Thread-2] Successfully created detail Accessory.
+2020-04-29 16:55:42,083 INFO FactoryStuff.Supplier [Thread-4] Successfully created detail Accessory.
+2020-04-29 16:55:42,083 INFO Storage.Storage [Thread-2] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:42,083 INFO Storage.Storage [Thread-4] New detail Accessory was added. Number of details Accessory : 2.
+2020-04-29 16:55:42,085 INFO FactoryStuff.Supplier [Thread-0] Trying to create detail Body.
+2020-04-29 16:55:42,085 INFO FactoryStuff.Supplier [Thread-0] Successfully created detail Body.
+2020-04-29 16:55:42,085 INFO Storage.Storage [Thread-0] New detail Body was added. Number of details Body : 1.
+2020-04-29 16:55:42,086 INFO Storage.Storage [pool-1-thread-1] Detail Body was got. Number of details : 0
+2020-04-29 16:55:42,086 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get motor.
+2020-04-29 16:55:42,086 INFO Storage.Storage [pool-1-thread-1] Detail Motor was got. Number of details : 0
+2020-04-29 16:55:42,086 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to get accessories.
+2020-04-29 16:55:42,086 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 1
+2020-04-29 16:55:42,086 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:42,087 INFO Storage.Storage [pool-1-thread-1] Storage of details Accessory is empty. Waiting...
+2020-04-29 16:55:42,101 INFO FactoryStuff.Supplier [Thread-3] Trying to create detail Accessory.
+2020-04-29 16:55:42,101 INFO FactoryStuff.Supplier [Thread-3] Successfully created detail Accessory.
+2020-04-29 16:55:42,101 INFO Storage.Storage [Thread-3] New detail Accessory was added. Number of details Accessory : 1.
+2020-04-29 16:55:42,101 INFO Storage.Storage [pool-1-thread-1] Detail Accessory was got. Number of details : 0
+2020-04-29 16:55:42,101 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Trying to add auto.
+2020-04-29 16:55:42,101 INFO Storage.Storage [pool-1-thread-1] New detail Auto was added. Number of details Auto : 6.
+2020-04-29 16:55:42,101 INFO FactoryStuff.AutoStorageController [pool-1-thread-1] Auto was successfully created.
+2020-04-29 16:55:42,641 INFO Main [main] Stop of factory.
