@@ -1,0 +1,9 @@
+package Messages;
+
+public enum MessageType {
+    TEXT_REQUEST,
+    EXIT_ATTEMPT,
+    REGISTRATION_ATTEMPT,
+    REGISTRATION_SUCCESS,
+    REGISTRATION_FAILURE
+}
