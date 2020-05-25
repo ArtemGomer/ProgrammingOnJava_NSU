@@ -37,18 +37,18 @@ public class TcpClient extends Observable implements Runnable {
     }
 
     public boolean sendMessageToServer(String line) throws IOException {
-        if (line.equalsIgnoreCase("exit")){
-            writer.writeObject(new Message(MessageType.EXIT_ATTEMPT, name));
-            writer.flush();
-            this.close();
-            return false;
-        } else if (!line.startsWith("/")){
+        if (!line.startsWith("/")){
             writer.writeObject(new Message(MessageType.TEXT_REQUEST, name + ": " + line));
-            writer.flush();
         } else {
+            if (line.substring(1).equalsIgnoreCase("exit")){
+                writer.writeObject(new Message(MessageType.EXIT_ATTEMPT, name));
+                writer.flush();
+                this.close();
+                return false;
+            }
             writer.writeObject(new Message(MessageType.COMMAND, line.substring(1)));
-            writer.flush();
         }
+        writer.flush();
         return true;
     }
 
