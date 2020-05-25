@@ -24,7 +24,6 @@ public class RequestProcessor implements Runnable {
     }
 
     public void sendMessageToThisClient(Message message) throws IOException {
-//        System.out.println("CLIENT IS WRITING5");
         writer.writeObject(message);
     }
 
@@ -35,27 +34,32 @@ public class RequestProcessor implements Runnable {
 
             while (true) {
                 Message message = (Message) reader.readObject();
-                System.out.println(message.getMessage());
                 if (message.getType() == MessageType.REGISTRATION_ATTEMPT) {
                     if (server.isValidName(message.getMessage())) {
                         server.addClient(new Client(message.getMessage(), this));
                         writer.writeObject(new Message(MessageType.REGISTRATION_SUCCESS, "Вы успешно зарегистрировались"));
+                        server.sendMessageToClients(new Message(MessageType.TEXT_RESPONSE, message.getMessage() + " has entered the chat!"));
                     } else {
                         writer.writeObject(new Message(MessageType.REGISTRATION_FAILURE, "Неверное имя. Повторите попытку"));
                     }
-                    writer.flush();
                 }
                 if (message.getType() == MessageType.TEXT_REQUEST) {
-//                    System.out.println("WHY IS THIS???");
                     server.sendMessageToClients(message);
                 }
-                if (message.getType() == MessageType.EXIT_ATTEMPT){
+                if (message.getType() == MessageType.EXIT_ATTEMPT) {
                     server.removeClient(message.getMessage());
+                    server.sendMessageToClients(new Message(MessageType.TEXT_RESPONSE, message.getMessage() + " has left the chat!"));
                 }
+                if (message.getType() == MessageType.COMMAND) {
+                    if (message.getMessage().equals("users")) {
+                        String names = server.getUsersNames();
+                        writer.writeObject(new Message(MessageType.TEXT_RESPONSE, names));
+                    }
+                }
+                writer.flush();
             }
         } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 }
-

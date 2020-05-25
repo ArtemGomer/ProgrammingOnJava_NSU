@@ -17,26 +17,36 @@ public class TcpServer implements Runnable {
     private ServerSocket socket;
     private final List<Client> clients = Collections.synchronizedList(new LinkedList<>());
 
-    boolean isValidName(String name){
-        for (Client client : clients){
-            if (name.equals(client.getName())){
+    boolean isValidName(String name) {
+        for (Client client : clients) {
+            if (name.equals(client.getName())) {
                 return false;
             }
         }
         return true;
     }
-    public void addClient(Client client){
+
+    public void addClient(Client client) {
         this.clients.add(client);
     }
 
-    public void removeClient(String name){
-        for (Client client : clients){
-            if (client.getName().equals(name)){
+    public void removeClient(String name) {
+        for (Client client : clients) {
+            if (client.getName().equals(name)) {
                 clients.remove(client);
                 break;
             }
         }
     }
+
+    public String getUsersNames(){
+        StringBuilder usersList = new StringBuilder();
+        for (Client client : clients) {
+            usersList.append(client.getName()).append("\n");
+        }
+        return usersList.toString();
+    }
+
 
     public TcpServer(int port){
         this.port = port;
@@ -72,19 +82,18 @@ public class TcpServer implements Runnable {
     @Override
     public void run() {
         try {
-            //Создаем новый серверный Socket на порту 2048
             this.socket = new ServerSocket(port);
             while (true) {
-                Socket clientSocket = this.socket.accept(); //принимаем соединение
+                Socket clientSocket = this.socket.accept();
                 System.out.println("Получено соединение от:" + clientSocket.getInetAddress()
                         + ":" + clientSocket.getPort());
-//Создаем и запускаем поток для обработки запроса
                 RequestProcessor client = new RequestProcessor(clientSocket, this);
                 Thread processor = new Thread(client);
                 System.out.println("Запуск обработчика...");
                 processor.start();
             }
-        } catch (IOException ex){
+        } catch (IOException ex) {
+            this.close();
             ex.printStackTrace();
         }
     }

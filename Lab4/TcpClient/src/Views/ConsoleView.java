@@ -19,7 +19,6 @@ public class ConsoleView implements Observer {
 
     @Override
     public void update(Message message) {
-//        System.out.println("CLIENT IS WRITING7");
         System.out.println(message.getMessage());
     }
 
@@ -27,13 +26,13 @@ public class ConsoleView implements Observer {
         String line;
         Thread tcpClient;
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("ENTER YOUR NAME");
+        System.out.println("Enter your name to enter the chat!");
         while (true) {
             line = consoleReader.readLine();
             if (!this.client.connect(new Message(MessageType.REGISTRATION_ATTEMPT, line))) {
-                System.out.println("THIS NAME IS BUSY. TRY AGAIN");
+                System.out.println("User with this name is already exists. Try again!");
             } else {
-                System.out.println("SUCCESSFUL");
+                System.out.println("Registration is completed successfully. Now you can talk with users!");
                 tcpClient = new Thread(this.client);
                 tcpClient.start();
                 break;
@@ -41,8 +40,7 @@ public class ConsoleView implements Observer {
         }
         do {
             line = consoleReader.readLine();
-//            System.out.println("CLIENT IS WRITING1");
         } while (client.sendMessageToServer(line));
-//        tcpClient.interrupt();
+        tcpClient.interrupt();
     }
 }

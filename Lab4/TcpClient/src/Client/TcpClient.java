@@ -31,21 +31,25 @@ public class TcpClient extends Observable implements Runnable {
         if (reply.getType() == MessageType.REGISTRATION_SUCCESS){
             this.name = message.getMessage();
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
     public boolean sendMessageToServer(String line) throws IOException {
         if (line.equalsIgnoreCase("exit")){
             writer.writeObject(new Message(MessageType.EXIT_ATTEMPT, name));
             writer.flush();
+            this.close();
             return false;
-        } else {
-//            System.out.println("CLIENT IS WRITING2");
+        } else if (!line.startsWith("/")){
             writer.writeObject(new Message(MessageType.TEXT_REQUEST, name + ": " + line));
             writer.flush();
-            return true;
+        } else {
+            writer.writeObject(new Message(MessageType.COMMAND, line.substring(1)));
+            writer.flush();
         }
+        return true;
     }
 
     @Override
@@ -55,7 +59,7 @@ public class TcpClient extends Observable implements Runnable {
                 this.message = (Message) reader.readObject();
                 this.notifyObservers();
             }
-        } catch (Exception ex) {
+        } catch (ClassNotFoundException | IOException ex) {
             ex.printStackTrace();
         }
     }

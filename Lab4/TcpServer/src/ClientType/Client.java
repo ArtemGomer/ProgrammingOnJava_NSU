@@ -1,7 +1,6 @@
 package ClientType;
 
 import Messages.Message;
-import Messages.MessageType;
 import Server.RequestProcessor;
 
 import java.io.IOException;
@@ -25,9 +24,6 @@ public class Client {
     }
 
     public void sendMessage(Message message) throws IOException {
-//        System.out.println("CLIENT IS WRITING4");
-//        message.setMessage(name + ": " + message.getMessage());
-//        String namedMessage = getName() + ": " + message.getMessage();
         processor.sendMessageToThisClient(message);
     }
 }

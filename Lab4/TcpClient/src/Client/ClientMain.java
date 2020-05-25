@@ -12,6 +12,5 @@ public class ClientMain {
         } catch (Exception ex){
             ex.printStackTrace();
         }
-        System.out.println("END");
     }
 }
