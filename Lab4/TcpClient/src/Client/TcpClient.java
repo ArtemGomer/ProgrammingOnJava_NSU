@@ -12,6 +12,7 @@ public class TcpClient extends Observable implements Runnable {
     private final ObjectOutputStream writer;
     private final ObjectInputStream reader;
     private String name;
+    private boolean serverWorking;
 
     public TcpClient(String ip, int port) throws IOException {
         this.socket = new Socket(ip, port);
@@ -25,31 +26,47 @@ public class TcpClient extends Observable implements Runnable {
         }
     }
 
-    public boolean connect(Message message) throws Exception {
-        writer.writeObject(message);
-        Message reply = (Message) reader.readObject();
-        if (reply.getType() == MessageType.REGISTRATION_SUCCESS){
-            this.name = message.getMessage();
-            return true;
-        } else {
+    public boolean connect(Message message) {
+        try {
+            writer.writeObject(message);
+            Message reply = (Message) reader.readObject();
+            if (reply.getType() == MessageType.REGISTRATION_SUCCESS) {
+                this.name = message.getMessage();
+                Thread messageReader = new Thread(this);
+                messageReader.start();
+                return true;
+            } else {
+                serverWorking = true;
+                return false;
+            }
+        }catch (Exception ex) {
+            this.message = new Message(MessageType.TEXT_RESPONSE, "Server is not working!");
+            this.notifyObservers();
+            serverWorking = false;
             return false;
         }
     }
 
-    public boolean sendMessageToServer(String line) throws IOException {
-        if (!line.startsWith("/")){
-            writer.writeObject(new Message(MessageType.TEXT_REQUEST, name + ": " + line));
-        } else {
-            if (line.substring(1).equalsIgnoreCase("exit")){
-                writer.writeObject(new Message(MessageType.EXIT_ATTEMPT, name));
-                writer.flush();
-                this.close();
-                return false;
+    public boolean sendMessageToServer(String line) {
+        try {
+            if (!line.startsWith("/")) {
+                writer.writeObject(new Message(MessageType.TEXT_REQUEST, name + ": " + line));
+            } else {
+                if (line.substring(1).equalsIgnoreCase("exit")) {
+                    writer.writeObject(new Message(MessageType.EXIT_ATTEMPT, name));
+                    writer.flush();
+                    this.close();
+                    return false;
+                }
+                writer.writeObject(new Message(MessageType.COMMAND, line.substring(1)));
             }
-            writer.writeObject(new Message(MessageType.COMMAND, line.substring(1)));
+            writer.flush();
+            return true;
+        } catch (Exception ex){
+            this.message = new Message(MessageType.TEXT_RESPONSE, "Server is not working!");
+            this.notifyObservers();
+            return false;
         }
-        writer.flush();
-        return true;
     }
 
     @Override
@@ -59,9 +76,12 @@ public class TcpClient extends Observable implements Runnable {
                 this.message = (Message) reader.readObject();
                 this.notifyObservers();
             }
-        } catch (ClassNotFoundException | IOException ex) {
-            ex.printStackTrace();
+        } catch (Exception ignored) {
         }
+    }
+
+    public boolean isServerWorking() {
+        return serverWorking;
     }
 }
 

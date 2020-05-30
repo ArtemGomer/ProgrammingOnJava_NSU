@@ -10,7 +10,8 @@ import java.net.Socket;
 public class RequestProcessor implements Runnable {
     private final Socket socket; //Точка установленного соединения
     private final TcpServer server;
-    ObjectOutputStream writer;
+    private ObjectOutputStream writer;
+    private String clientName;
 
     RequestProcessor(Socket socket, TcpServer server) {
         this.socket = socket;
@@ -36,9 +37,10 @@ public class RequestProcessor implements Runnable {
                 Message message = (Message) reader.readObject();
                 if (message.getType() == MessageType.REGISTRATION_ATTEMPT) {
                     if (server.isValidName(message.getMessage())) {
-                        server.addClient(new Client(message.getMessage(), this));
+                        clientName = message.getMessage();
+                        server.addClient(new Client(clientName, this));
                         writer.writeObject(new Message(MessageType.REGISTRATION_SUCCESS, "Вы успешно зарегистрировались"));
-                        server.sendMessageToClients(new Message(MessageType.TEXT_RESPONSE, message.getMessage() + " has entered the chat!"));
+                        server.sendMessageToClients(new Message(MessageType.TEXT_RESPONSE, clientName + " has entered the chat!"));
                     } else {
                         writer.writeObject(new Message(MessageType.REGISTRATION_FAILURE, "Неверное имя. Повторите попытку"));
                     }
@@ -47,7 +49,7 @@ public class RequestProcessor implements Runnable {
                     server.sendMessageToClients(message);
                 }
                 if (message.getType() == MessageType.EXIT_ATTEMPT) {
-                    server.removeClient(message.getMessage());
+                    server.removeClient(clientName);
                     server.sendMessageToClients(new Message(MessageType.TEXT_RESPONSE, message.getMessage() + " has left the chat!"));
                 }
                 if (message.getType() == MessageType.COMMAND) {
@@ -59,7 +61,8 @@ public class RequestProcessor implements Runnable {
                 writer.flush();
             }
         } catch (Exception ex) {
-            ex.printStackTrace();
+            server.removeClient(clientName);
+            server.sendMessageToClients(new Message(MessageType.TEXT_RESPONSE, clientName + " has left the chat!"));
         }
     }
 }

@@ -24,23 +24,23 @@ public class ConsoleView implements Observer {
 
     public void connect() throws Exception {
         String line;
-        Thread tcpClient;
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter your name to enter the chat!");
         while (true) {
             line = consoleReader.readLine();
             if (!this.client.connect(new Message(MessageType.REGISTRATION_ATTEMPT, line))) {
-                System.out.println("User with this name is already exists. Try again!");
+                if (client.isServerWorking()) {
+                    System.out.println("User with this name is already exists. Try again!");
+                } else {
+                    return;
+                }
             } else {
                 System.out.println("Registration is completed successfully. Now you can talk with users!");
-                tcpClient = new Thread(this.client);
-                tcpClient.start();
                 break;
             }
         }
         do {
             line = consoleReader.readLine();
         } while (client.sendMessageToServer(line));
-        tcpClient.interrupt();
     }
 }
